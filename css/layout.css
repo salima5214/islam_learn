@@ -1,5 +1,5 @@
 html {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 body {
@@ -12,6 +12,13 @@ body {
 
 .card-container{
     width: 215px;
+    height: 400px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card-container2{
+    width: 400px;
     height: 400px;
     position: relative;
     perspective: 1000px;
@@ -95,7 +102,38 @@ body {
     text-shadow: 0 .15rem .2rem rgba(0, 0, 0, .2);
 }
 
-.cover_final, .back{
+.cover_6, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform .25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: .4rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+    text-shadow: 0 .15rem .2rem rgba(0, 0, 0, .2);
+}
+
+.cover_7, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform .25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: .4rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+    text-shadow: 0 .15rem .2rem rgba(0, 0, 0, .2);
+}
+
+
+.cover_8, .back{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -114,21 +152,21 @@ body {
 .cover_1{
     background-color: aqua;
     transform: rotateY(0deg);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(251, 194, 37, 0.98) 0.1%, rgb(255, 194, 64) 99.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(39, 255, 36, 0.852) 0.1%, rgb(98, 228, 47) 99.8% );
     color: #fff;
 }
 
 .cover_2{
     background-color: aqua;
     transform: rotateY(0deg);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(141, 243, 127, 0.98) 0.1%, rgb(112, 248, 123) 99.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0, 0, 255, 0.98) 0.1%, rgb(0, 68, 255) 99.8% );
     color: #fff;
 }
 
 .cover_3{
     background-color: aqua;
     transform: rotateY(0deg);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(28, 13, 163, 0.98) 0.1%, rgb(36, 14, 238) 99.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2, 255, 247, 0.98) 0.1%, rgb(0, 251, 255) 99.8% );
     color: #fff;
 }
 
@@ -142,16 +180,32 @@ body {
 .cover_5{
     background-color: aqua;
     transform: rotateY(0deg);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(104, 75, 23, 0.98) 0.1%, rgb(100, 70, 36) 99.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255, 200, 0, 0.98) 0.1%, rgb(255, 191, 0) 99.8% );
     color: #fff;
 }
 
-.cover_final{
+.cover_6{
     background-color: aqua;
     transform: rotateY(0deg);
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(219, 157, 231, 0.98) 0.1%, rgb(112, 248, 230) 99.8% );
     color: #fff;
 }
+
+.cover_7{
+    background-color: aqua;
+    transform: rotateY(0deg);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(219, 157, 231, 0.98) 0.1%, rgb(112, 248, 230) 99.8% );
+    color: #fff;
+}
+
+.cover_8{
+    background-color: aqua;
+    transform: rotateY(0deg);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255, 135, 215, 0.98) 0.1%, rgb(255, 160, 253) 99.8% );
+    color: #fff;
+}
+
+
 
 /***********************************************/
 .card-container:hover .cover_1{
@@ -166,6 +220,18 @@ body {
     transform: rotatey(180deg);
 }
 
+.card-container2:hover .cover_1{
+    transform: rotatey(180deg);
+}
+
+.card-container2:hover .cover_2{
+    transform: rotatey(180deg);
+}
+
+.card-container2:hover .cover_3{
+    transform: rotatey(180deg);
+}
+
 .card-container:hover .cover_4{
     transform: rotatey(180deg);
 }
@@ -175,7 +241,16 @@ body {
     transform: rotatey(180deg);
 }
 
-.card-container:hover .cover_final{
+.card-container:hover .cover_6{
+    transform: rotatey(180deg);
+}
+
+.card-container:hover .cover_7{
+    transform: rotatey(180deg);
+}
+
+
+.card-container:hover .cover_8{
     transform: rotatey(180deg);
 }
 /***********************************************/
@@ -185,6 +260,10 @@ body {
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(0, 0, 0) 0%, rgb(0, 0, 0) 90% );
 }
 .card-container:hover .back{
+    transform: rotatey(0deg);
+}
+
+.card-container2:hover .back{
     transform: rotatey(0deg);
 }
 
